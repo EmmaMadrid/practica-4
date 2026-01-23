@@ -8,6 +8,11 @@ def hola_mundo():
 # Lo que se devuelve aquí se mostrará en el navegador
     return '¡Hola! Mi pipeline de DevOps funciona correctamente.'
 # Verifica si este archivo es el programa principal que se está ejecutando
+
+@app.route('/adios')
+def adios():
+    return '¡Adiós! Gracias por visitar mi aplicación.'
+
 if __name__ == '__main__':
 # Inicia el servidor web
     app.run(host='0.0.0.0', port=5001)
